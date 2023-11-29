@@ -6,22 +6,114 @@
             "idade": "30",
             "altura": "1.85",
             "peso": "80",
-            "senha": "123"
+            "senha": "123",
+            "IMC": " "
         },
         "José":{
             "nome": "José",
-            "nome_completo": "José Santos",
-            "idade": "20",
+            "nome_completo": "José Pascoal Filho",
+            "idade": "17",
             "altura": "1.75",
-            "peso": "85",
-            "senha": "456"
+            "peso": "70",
+            "senha": "zezinho",
+            "IMC": " " 
+        },
+        "Edson":{
+            "nome": "Edson",
+            "nome_completo": "Edson José",
+            "idade": "31",
+            "altura": "1.74",
+            "peso": "71",
+            "senha": "123abc",
+            "IMC": " " 
         }
         },
 
     
-    "Treinos":{         
-        "João":
+    "Treinos":{
+        "Edson":
         {
+            "A":{
+                "exercicio 1": {
+                    "exercicio": "Supino Reto",
+                    "series": "4",
+                    "repeticoes": "8",
+                    "carga": "70"
+                },
+                "exercicio 2":{
+                    "exercicio": "Supino Inclinado",
+                    "series": "3",
+                    "repeticoes": "12",
+                    "carga": "40"
+                },
+                "exercicio 3":{
+                    "exercicio": "Fly Declinado",
+                    "series": "3",
+                    "repeticoes": "12",
+                    "carga": "40"
+                },
+                
+                    "exercicio 4": {
+                        "exercicio": "Pulley Frente",
+                        "series": "4",
+                        "repeticoes": "8",
+                        "carga": "60"
+                    },
+                    "exercicio 5":{
+                        "exercicio": "Remada Curvada",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "50"
+                    },
+                    "exercicio 6":{
+                        "exercicio": "Desenvolvimento",
+                        "series": "3",
+                        "repeticoes": "12",
+                        "carga": "30"
+                    }
+            },
+            "B": {
+                "exercicio 1": {
+                    "exercicio": "Agachamento",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                "exercicio 2":{
+                    "exercicio": "Terra",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                "exercicio 3":{
+                    "exercicio": "Stiff",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                
+                    "exercicio 4": {
+                        "exercicio": "Front Squat",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    },
+                    "exercicio 5":{
+                        "exercicio": "Cadeira Abdutora",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    },
+                    "exercicio 6":{
+                        "exercicio": "Cadeira Adutora",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    }
+            }
+        },         
+        "João":
+            {
             "A":{
                 "exercicio 1": {
                     "exercicio": "Supino Reto",
@@ -31,7 +123,7 @@
                 },
                 "exercicio 2":{
                     "exercicio": "Supino Inclinado",
-                    "series": "3",
+                    "series": "4",
                     "repeticoes": "15",
                     "carga": "60"
                 },
@@ -44,7 +136,121 @@
                 
                     "exercicio 4": {
                         "exercicio": "Pulley Frente",
+                        "series": "4",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    },
+                    "exercicio 5":{
+                        "exercicio": "Remada Curvada",
                         "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    },
+                    "exercicio 6":{
+                        "exercicio": "Desenvolvimento",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    }
+            },
+            "B": {
+                "exercicio 1": {
+                    "exercicio": "Agachamento",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                "exercicio 2":{
+                    "exercicio": "Terra",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                "exercicio 3":{
+                    "exercicio": "Stiff",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                
+                    "exercicio 4": {
+                        "exercicio": "Front Squat",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    },
+                    "exercicio 5":{
+                        "exercicio": "Cadeira Abdutora",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    },
+                    "exercicio 6":{
+                        "exercicio": "Cadeira Adutora",
+                        "series": "3",
+                        "repeticoes": "15",
+                        "carga": "60"
+                    }
+            },
+            "C": {
+                "exercicio 1": {
+                    "exercicio": "Afundo",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                "exercicio 2":{
+                    "exercicio": "Aviãozinho",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                "exercicio 3":{
+                    "exercicio": "Flay",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                    },
+                
+                "exercicio 4": {
+                    "exercicio": "Pullover",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                },
+                "exercicio 5":{
+                    "exercicio": "Prancha Ventral",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                }
+            }
+        },         
+        "José":
+            {
+            "A":{
+                "exercicio 1": {
+                    "exercicio": "Supino Reto",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                },
+                "exercicio 2":{
+                    "exercicio": "Supino Inclinado",
+                    "series": "4",
+                    "repeticoes": "15",
+                    "carga": "60"
+                },
+                "exercicio 3":{
+                    "exercicio": "Supino Declinado",
+                    "series": "3",
+                    "repeticoes": "15",
+                    "carga": "60"
+                },
+                
+                    "exercicio 4": {
+                        "exercicio": "Pulley Frente",
+                        "series": "4",
                         "repeticoes": "15",
                         "carga": "60"
                     },
@@ -132,7 +338,9 @@
                         "repeticoes": "15",
                         "carga": "60"
                     }
-            }
         }
-    }
+        }
+        }
 }
+
+
