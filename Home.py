@@ -40,14 +40,15 @@ if autenticacao_usuario():
     #usuario = st.session_state['user']
     aluno = dados['Alunos'][usuario]
     with aba1:
-        col1, col2 = st.columns(2)
+        col1, col2 = st.columns([2,1])
         with col1:
             col1.metric('Nome', value=aluno['nome'] )
-            col2.metric('Nome Completo', aluno['nome_completo'])
+            col1.metric('Nome Completo', aluno['nome_completo'])
             col1.metric('Altura', aluno['altura'])
         with col2:
             col2.metric('Idade', aluno['idade'])
             col2.metric('Peso', aluno['peso'])
+            col2.metric('IMC'), aluno['IMC']
 
     with aba2:
         
@@ -59,8 +60,11 @@ if autenticacao_usuario():
         st.subheader('Esse é o seu treino:')
         #st.write('Page retorna: ', treinos_disponiveis)
         treino = dados['Treinos'][usuario]
-        coluna1, coluna2  = st.columns(2)
-        
-        
-        for i in treino[page]:
-            coluna1.metric(i, treino[page][i]['exercicio'])
+
+        coluna1, coluna2, coluna3, coluna4  = st.columns([4,1,1,1])
+        with coluna1:
+            for i in treino[page]:
+                coluna1.metric(i, treino[page][i]['exercicio'])
+                coluna2.metric('Séries', treino[page][i]['series'])
+                coluna3.metric('Repetições', treino[page][i]['repeticoes']) 
+                coluna4.metric('Carga', treino[page][i]['carga'])
