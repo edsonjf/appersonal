@@ -48,7 +48,7 @@ if autenticacao_usuario():
         with col2:
             col2.metric('Idade', aluno['idade'])
             col2.metric('Peso', aluno['peso'])
-            col2.metric('IMC'), aluno['IMC']
+            col2.metric('IMC', float(int(aluno['altura'])/int(aluno['peso'])))
 
     with aba2:
         
