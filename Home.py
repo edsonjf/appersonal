@@ -36,7 +36,7 @@ def autenticacao_usuario():
 if autenticacao_usuario():
     
     aba1, aba2 = st.tabs(['Home', 'Meus Treinos'])
-    usuario = 'João'
+    usuario = st.session_state['user']
     #usuario = st.session_state['user']
     aluno = dados['Alunos'][usuario]
     with aba1:
