@@ -37,6 +37,9 @@ def get_value(key):
     st.session_state["_"+key] = st.session_state[key]
 
 if autenticacao_usuario():
+    st.button('Logout')
+    if st.button:
+        st.session_state['autenticado'] = False
     
     get_value('user')
     st.session_state['user'] = st.session_state['_user']
