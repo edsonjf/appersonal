@@ -37,7 +37,9 @@ def get_value(key):
     st.session_state["_"+key] = st.session_state[key]
 
 if autenticacao_usuario():
-        
+    st.button('Logout')
+        if st.button:
+            st.session_state['autenticado'] = False    
     get_value('user')
     st.session_state['user'] = st.session_state['_user']
     usuario = st.session_state['_user']
@@ -46,9 +48,7 @@ if autenticacao_usuario():
     
     aluno = dados['Alunos'][usuario]
     with aba1:
-        st.button('Logout')
-        if st.button:
-            st.session_state['autenticado'] = False
+        
         col1, col2 = st.columns([2,1])
         with col1:
             col1.metric('Nome', value=aluno['nome'] )
