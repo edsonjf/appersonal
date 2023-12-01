@@ -33,11 +33,17 @@ def autenticacao_usuario():
             st.text_input(label="Password :", value="", key="passwd", type="password", on_change=creds_entered)
             return False
 
+def get_value(key):
+    st.session_state["_"+key] = st.session_state[key]
+
 if autenticacao_usuario():
     
+    get_value('user')
+    st.session_state['user'] = st.session_state['_user']
+    usuario = st.session_state['_user']
+
     aba1, aba2 = st.tabs(['Home', 'Meus Treinos'])
-    usuario = st.session_state['user']
-    #usuario = st.session_state['user']
+    
     aluno = dados['Alunos'][usuario]
     with aba1:
         col1, col2 = st.columns([2,1])
