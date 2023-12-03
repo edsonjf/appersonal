@@ -92,11 +92,13 @@ def home_page():
             treino = dados['Treinos'][usuario]
             coluna1, coluna2, coluna3, coluna4  = st.columns([4,1,1,1])
             with coluna1:
-                for i in treino[page]:
-                    coluna1.metric(i, treino[page][i]['exercicio'])
-                    coluna2.metric('Séries', treino[page][i]['series'])
-                    coluna3.metric('Repetições', treino[page][i]['repeticoes']) 
-                    coluna4.metric('Carga', treino[page][i]['carga'])       
+                n = 1
+                for exercicio in treino[page]:
+                    coluna1.metric(exercicio, treino[page][exercicio]['exercicio'])
+                    coluna2.metric(f'{n}: Séries', treino[page][exercicio]['series'])
+                    coluna3.metric(f'{n}: Repetições', treino[page][exercicio]['repeticoes']) 
+                    coluna4.metric(f'{n}: Carga', treino[page][exercicio]['carga'])       
+                    n += 1      
 
 with headerSection:
     st.title('Personal')
