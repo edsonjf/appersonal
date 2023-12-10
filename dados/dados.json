@@ -14,7 +14,7 @@
             "nome_completo": "José Pascoal Filho",
             "idade": "17",
             "altura": "1.75",
-            "peso": "70",
+            "peso": "73",
             "senha": "zezinho",
             "IMC": " " 
         },
@@ -230,113 +230,143 @@
             {
             "A":{
                 "exercicio 1": {
-                    "exercicio": "Supino Reto",
+                    "exercicio": "Pulley Frente",
                     "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "repeticoes": "12",
+                    "carga": "42.5"
                 },
                 "exercicio 2":{
-                    "exercicio": "Supino Inclinado",
-                    "series": "4",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "exercicio": "Remada com triângulo",
+                    "series": "3",
+                    "repeticoes": "12",
+                    "carga": "42.5"
                 },
                 "exercicio 3":{
-                    "exercicio": "Supino Declinado",
+                    "exercicio": "Remada na maquina",
                     "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "repeticoes": "12",
+                    "carga": "30"
                 },
                 
                     "exercicio 4": {
-                        "exercicio": "Pulley Frente",
-                        "series": "4",
-                        "repeticoes": "15",
-                        "carga": "60"
-                    },
-                    "exercicio 5":{
-                        "exercicio": "Remada Curvada",
+                        "exercicio": "Remada unilateral",
                         "series": "3",
-                        "repeticoes": "15",
-                        "carga": "60"
+                        "repeticoes": "12",
+                        "carga": "30"
                     },
-                    "exercicio 6":{
-                        "exercicio": "Desenvolvimento",
+                    "exercicio 5": {
+                        "exercicio": "Rosca direta, barra W",
                         "series": "3",
-                        "repeticoes": "15",
-                        "carga": "60"
+                        "repeticoes": "12",
+                        "carga": "20"
+                    },
+                    "exercicio 6": {
+                        "exercicio": "Martelo",
+                        "series": "3",
+                        "repeticoes": "12",
+                        "carga": "12"
+                    },
+                    "exercicio 7": {
+                        "exercicio": "Rosca direta na polia",
+                        "series": "3",
+                        "repeticoes": "12",
+                        "carga": "25"
+                    },
+                    "exercicio 8": {
+                        "exercicio": "Rosca na maquina",
+                        "series": "3",
+                        "repeticoes": "12",
+                        "carga": "30"
                     }
             },
             "B": {
                 "exercicio 1": {
-                    "exercicio": "Agachamento",
+                    "exercicio": "Supino reto com halter",
                     "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "repeticoes": "12",
+                    "carga": "16"
                     },
                 "exercicio 2":{
-                    "exercicio": "Terra",
+                    "exercicio": "Crucifixo na maquina",
                     "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "repeticoes": "12",
+                    "carga": "30"
                     },
                 "exercicio 3":{
-                    "exercicio": "Stiff",
+                    "exercicio": "Crucifixo na polia",
                     "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "repeticoes": "12",
+                    "carga": "40"
                     },
                 
                     "exercicio 4": {
-                        "exercicio": "Front Squat",
+                        "exercicio": "Supino Inclinado com halter",
                         "series": "3",
-                        "repeticoes": "15",
-                        "carga": "60"
+                        "repeticoes": "12",
+                        "carga": "14"
                     },
                     "exercicio 5":{
-                        "exercicio": "Cadeira Abdutora",
+                        "exercicio": "Triceps pulley",
                         "series": "3",
-                        "repeticoes": "15",
-                        "carga": "60"
+                        "repeticoes": "12",
+                        "carga": "25"
                     },
                     "exercicio 6":{
-                        "exercicio": "Cadeira Adutora",
+                        "exercicio": "Triceps frances halter",
                         "series": "3",
-                        "repeticoes": "15",
-                        "carga": "60"
+                        "repeticoes": "12",
+                        "carga": "14"
+                    },
+                    "exercicio 7":{
+                        "exercicio": "Elevação lateral",
+                        "series": "3",
+                        "repeticoes": "12",
+                        "carga": "10"
+                    },
+                    "exercicio 8":{
+                        "exercicio": "Desenvolvimento",
+                        "series": "3",
+                        "repeticoes": "12",
+                        "carga": "14"
                     }
             },
             "C": {
                 "exercicio 1": {
-                    "exercicio": "Afundo",
+                    "exercicio": "Agachamento livre",
                     "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "repeticoes": "12",
+                    "carga": "40"
                     },
                 "exercicio 2":{
-                    "exercicio": "Aviãozinho",
-                    "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "exercicio": "Leg press",
+                    "series": "4",
+                    "repeticoes": "12",
+                    "carga": "240"
                     },
                 "exercicio 3":{
-                    "exercicio": "Flay",
+                    "exercicio": "Agachamento hack",
                     "series": "3",
-                    "repeticoes": "15",
-                    "carga": "60"
+                    "repeticoes": "12",
+                    "carga": "100"
                     },
                 
                     "exercicio 4": {
-                        "exercicio": "Pullover",
+                        "exercicio": "Cadeira extensora",
                         "series": "3",
-                        "repeticoes": "15",
-                        "carga": "60"
+                        "repeticoes": "12",
+                        "carga": "37"
                     },
                     "exercicio 5":{
-                        "exercicio": "Prancha Ventral",
+                        "exercicio": "Panturrilha sentado",
                         "series": "3",
-                        "repeticoes": "15",
-                        "carga": "60"
+                        "repeticoes": "12",
+                        "carga": "30"
+                    },
+                    "exercicio 6":{
+                        "exercicio": "Panturilha em pé",
+                        "series": "3",
+                        "repeticoes": "12",
+                        "carga": "80"
                     }
         }
         }
