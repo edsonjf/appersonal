@@ -82,24 +82,52 @@ def home_page():
                 col2.metric('Idade', aluno['idade'])
                 col2.metric('Peso', aluno['peso'])
                 col2.metric('IMC', aluno['IMC'])
+
         with aba2:        
             treinos_disponiveis = []
             for tipo_treino in dados['Treinos'][usuario].keys():
                 treinos_disponiveis.append(tipo_treino)
-            page = st.radio('Treinos Disponíveis', treinos_disponiveis, horizontal=True)
-            st.subheader('Esse é o seu treino:')
-            #st.write('Page retorna: ', treinos_disponiveis)
-            treino = dados['Treinos'][usuario]
-            coluna1, coluna2, coluna3, coluna4  = st.columns([4,1,1,1])
-            with coluna1:
-                n = 1
-                for exercicio in treino[page]:
-                    coluna1.metric(exercicio, treino[page][exercicio]['exercicio'])
-                    coluna2.metric(f'{n}: Séries', treino[page][exercicio]['series'])
-                    coluna3.metric(f'{n}: Repetições', treino[page][exercicio]['repeticoes']) 
-                    coluna4.metric(f'{n}: Carga', treino[page][exercicio]['carga'])       
-                    n += 1      
 
+            page = st.radio('Treinos Disponíveis', treinos_disponiveis, horizontal=True)
+
+            st.subheader(f'Esse é o seu treino: {page}')
+            st.write('Exercícios: ')
+
+            treino = dados['Treinos'][usuario]
+
+            n = 1
+            for exercicio in treino[page]:
+                if n == 1:
+                    ordem_ex = 'Primeiro'
+                elif n == 2:
+                    ordem_ex = 'Segundo'
+                elif n == 3:
+                    ordem_ex = 'Terceiro'
+                elif n == 4:
+                    ordem_ex = 'Quarto'
+                elif n == 5:
+                    ordem_ex = 'Quinto'
+                elif n == 6:
+                    ordem_ex = 'Sexto'
+                elif n == 7:
+                    ordem_ex = 'Sétimo'
+                elif n == 8:
+                    ordem_ex = 'Oitavo'
+                elif n == 9:
+                    ordem_ex = 'Nono'
+                else:
+                    ordem_ex = '...'
+
+                with st.expander(f'{ordem_ex}'):
+                    coluna1, coluna2, coluna3, coluna4  = st.columns([3,1,1,1])
+                    
+                    coluna1.metric('Exercício', treino[page][exercicio]['exercicio'])
+                    coluna2.metric(f'Séries', treino[page][exercicio]['series'])
+                    coluna3.metric(f'Repetições', treino[page][exercicio]['repeticoes'])
+                    coluna4.metric(f'Carga', treino[page][exercicio]['carga'])
+                            
+                    n += 1
+                    
 with headerSection:
     st.title('Personal')
     if 'loggedIn' not in st.session_state:
